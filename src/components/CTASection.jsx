@@ -29,7 +29,7 @@ export default function CTASection() {
           className="cta-section__heading"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-20px" }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           START YOUR<br/>PROJECT
@@ -37,7 +37,7 @@ export default function CTASection() {
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-20px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <Link to="/contact" className="cta-section__btn">

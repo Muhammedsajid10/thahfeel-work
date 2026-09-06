@@ -42,7 +42,7 @@ function FeatureBlock({ feature, index }) {
             className="feature-block__num"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-20px" }}
           >
             0{index + 1}
           </motion.p>
@@ -50,7 +50,7 @@ function FeatureBlock({ feature, index }) {
             className="feature-block__title"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ delay: 0.1 }}
           >
             {feature.title}
@@ -59,7 +59,7 @@ function FeatureBlock({ feature, index }) {
             className="feature-block__desc"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ delay: 0.2 }}
           >
             {feature.desc}
@@ -78,7 +78,7 @@ export default function FeatureSections() {
           className="section-label"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-20px" }}
         >
           03 &mdash; OUR CAPABILITIES
         </motion.p>

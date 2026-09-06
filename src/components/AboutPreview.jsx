@@ -23,7 +23,7 @@ export default function AboutPreview() {
               className="section-label"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-20px" }}
             >
               01 &mdash; ABOUT US
             </motion.p>
@@ -32,7 +32,7 @@ export default function AboutPreview() {
               className="about-preview__heading"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-20px" }}
               transition={{ delay: 0.1 }}
             >
               Dependable execution and professional workmanship.
@@ -41,7 +41,7 @@ export default function AboutPreview() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-20px" }}
               transition={{ delay: 0.2 }}
             >
               <p className="about-preview__text">

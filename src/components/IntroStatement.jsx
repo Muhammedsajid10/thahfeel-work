@@ -27,7 +27,7 @@ export default function IntroStatement() {
           variants={container}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-20px" }}
         >
           {statement.map((line, idx) => (
             <div key={idx} className="intro-statement__line-wrapper">
@@ -40,7 +40,7 @@ export default function IntroStatement() {
           className="intro-statement__desc"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-20px" }}
           transition={{ delay: 0.5, duration: 1 }}
         >
           <p>

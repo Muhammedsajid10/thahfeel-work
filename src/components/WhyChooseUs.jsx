@@ -28,7 +28,7 @@ export default function WhyChooseUs() {
           className="section-label"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-20px" }}
         >
           04 &mdash; CORE VALUES
         </motion.p>
@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
               className="why-us__item"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-150px" }}
+              viewport={{ once: true, margin: "-20px" }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
               <div className="why-us__num-col">

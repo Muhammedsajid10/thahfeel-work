@@ -11,7 +11,7 @@ export default function ServiceSection() {
           className="section-label"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-20px" }}
         >
           02 &mdash; OUR SERVICES
         </motion.p>
@@ -43,7 +43,7 @@ export default function ServiceSection() {
           className="featured-service__image"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-20px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           data-cursor="image"
         >
@@ -55,7 +55,7 @@ export default function ServiceSection() {
             className="featured-service__title"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-20px" }}
           >
             STRUCTURAL STEEL
           </motion.h3>
@@ -63,7 +63,7 @@ export default function ServiceSection() {
             className="featured-service__desc"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ delay: 0.1 }}
           >
             Fabrication and installation of robust steel frameworks, canopies, and custom architectural elements.
@@ -72,7 +72,7 @@ export default function ServiceSection() {
             className="featured-service__list"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ delay: 0.2 }}
           >
             <li>Gates & Fencing</li>
@@ -89,7 +89,7 @@ export default function ServiceSection() {
           className="featured-service__image"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-20px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           data-cursor="image"
         >
@@ -101,7 +101,7 @@ export default function ServiceSection() {
             className="featured-service__title"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-20px" }}
           >
             ARCHITECTURAL GLASS
           </motion.h3>
@@ -109,7 +109,7 @@ export default function ServiceSection() {
             className="featured-service__desc"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ delay: 0.1 }}
           >
             Frameless facades, premium partitions, and intricate glass balustrades designed for visual impact.

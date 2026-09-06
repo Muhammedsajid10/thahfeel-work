@@ -56,7 +56,7 @@ export default function About() {
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-20px" }}
             >
               Overview
             </motion.h2>
@@ -66,7 +66,7 @@ export default function About() {
               className="about-overview__lead"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-20px" }}
             >
               Tahfeel Technical Service provides supply, installation, contracting and maintenance solutions across a broad range of building and technical works.
             </motion.p>
@@ -74,7 +74,7 @@ export default function About() {
               className="about-overview__text"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-20px" }}
               transition={{ delay: 0.1 }}
             >
               We combine practical site coordination, workmanship, reliability and responsive service to deliver solutions tailored to project requirements.
@@ -89,7 +89,7 @@ export default function About() {
             className="about-vision__card"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ duration: 0.6 }}
           >
             <h3>VISION</h3>
@@ -99,7 +99,7 @@ export default function About() {
             className="about-vision__card"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3>MISSION</h3>
