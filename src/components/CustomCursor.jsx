@@ -58,8 +58,6 @@ export default function CustomCursor() {
     return () => window.removeEventListener("mouseover", handleMouseOver);
   }, [isTouchDevice]);
 
-  if (isTouchDevice) return null;
-
   const variants = {
     default: {
       width: 12,
@@ -103,6 +101,8 @@ export default function CustomCursor() {
     x.set(position.x);
     y.set(position.y);
   }, [position, x, y]);
+
+  if (isTouchDevice) return null;
 
   return (
     <motion.div
