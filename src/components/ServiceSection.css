@@ -203,16 +203,28 @@
   .featured-service--reverse .featured-service__content {
     order: 2;
   }
+  
+  /* Always show background on mobile */
+  .service-row__bg {
+    opacity: 1;
+  }
+  .service-row {
+    padding: 60px 0;
+  }
+  .service-row__title {
+    color: var(--off-white);
+  }
+  .service-row__num {
+    color: var(--rust);
+  }
+  .service-row__arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media (max-width: 600px) {
   .service-row__num {
     width: 40px;
-  }
-  .service-row:hover {
-    padding: 60px 0;
-  }
-  .service-row:hover .service-row__title {
-    transform: translateX(15px);
   }
 }
