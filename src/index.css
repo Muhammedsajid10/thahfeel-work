@@ -1,0 +1,185 @@
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root {
+  /* color */
+  --charcoal: #0A0A0A;       /* primary dark background */
+  --graphite: #111111;       /* secondary dark surface */
+  --graphite-line: rgba(255, 255, 255, 0.08); /* subtle line */
+  --steel: #8A8A8A;          /* neutral gray */
+  --steel-light: #A0A0A0;    /* light text on dark */
+  --off-white: #F5F3EE;      /* warm paper / text */
+  --rust: #b59877;           /* champagne/bronze metal accent */
+  --rust-dark: #9e8264;      /* darker metal */
+
+  /* surface variables (inverting for a dark theme) */
+  --paper: var(--charcoal);
+  --ink: var(--off-white);
+  --ink-soft: var(--steel-light);
+  --rule: var(--graphite-line);
+
+  /* typography */
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  
+  /* layout */
+  --container: 1400px;
+  --gutter: clamp(24px, 5vw, 80px);
+  --radius: 0;               /* sharp architecture */
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--off-white);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   LAYOUT UTILITIES
+   ============================================================ */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.section {
+  padding: clamp(56px, 9vw, 108px) 0;
+}
+
+.section--dark {
+  background: var(--charcoal);
+  color: var(--off-white);
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 30px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: var(--rust);
+  color: var(--off-white);
+}
+.btn--primary:hover {
+  background: var(--rust-dark);
+}
+
+.btn--ghost-dark {
+  background: transparent;
+  border-color: rgba(242, 240, 236, 0.4);
+  color: var(--off-white);
+}
+.btn--ghost-dark:hover {
+  border-color: var(--off-white);
+  background: rgba(242, 240, 236, 0.08);
+}
+
+.btn--ghost-light {
+  background: transparent;
+  border-color: rgba(26, 28, 30, 0.25);
+  color: var(--ink);
+}
+.btn--ghost-light:hover {
+  border-color: var(--ink);
+  background: rgba(26, 28, 30, 0.05);
+}
+
+.btn--whatsapp {
+  background: #2f6b4f;
+  color: var(--off-white);
+}
+.btn--whatsapp:hover {
+  background: #275a42;
+}
+
+/* ============================================================
+   SCROLL REVEAL (subtle, used sparingly)
+   ============================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

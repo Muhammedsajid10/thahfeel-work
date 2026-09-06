@@ -1,0 +1,139 @@
+.process-section {
+  padding: 180px 0;
+  background: var(--off-white);
+  color: var(--charcoal);
+  border-top: 1px solid rgba(10, 10, 10, 0.1);
+}
+
+.process-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.process-section__left {
+  position: relative;
+}
+
+.process-section__sticky {
+  position: sticky;
+  top: 180px;
+}
+
+.process-section__heading {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-family: var(--font-display);
+  line-height: 1.1;
+}
+
+.process-section__right {
+  position: relative;
+  padding-left: 60px;
+}
+
+.process-section__timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.process-section__timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -40px;
+  width: 2px;
+  background: rgba(10, 10, 10, 0.1);
+}
+
+.process-section__progress {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -40px;
+  width: 2px;
+  background: var(--rust);
+  transform-origin: top;
+}
+
+.process-step {
+  position: relative;
+}
+
+.process-step__node {
+  position: absolute;
+  top: 0;
+  left: -46px; /* -40px (line) - 6px (half width of node - half line) */
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--off-white);
+  border: 2px solid var(--charcoal);
+  z-index: 2;
+  transition: border-color 0.3s ease;
+}
+
+.process-step:hover .process-step__node {
+  border-color: var(--rust);
+  background: var(--rust);
+}
+
+.process-step__content {
+  padding-top: -5px;
+}
+
+.process-step__num {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--rust);
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.process-step__title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-family: var(--font-display);
+}
+
+.process-step__desc {
+  font-size: 1.15rem;
+  color: var(--steel);
+  line-height: 1.6;
+  max-width: 40ch;
+}
+
+@media (max-width: 960px) {
+  .process-section__inner {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .process-section__sticky {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .process-section {
+    padding: 100px 0;
+  }
+  .process-section__right {
+    padding-left: 40px;
+  }
+  .process-section__timeline::before,
+  .process-section__progress {
+    left: -20px;
+  }
+  .process-step__node {
+    left: -26px;
+  }
+}

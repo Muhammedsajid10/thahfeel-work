@@ -1,0 +1,91 @@
+.cta-section {
+  position: relative;
+  color: var(--off-white);
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cta-section__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cta-section__bg img {
+  width: 100%;
+  height: 120%; /* For parallax */
+  object-fit: cover;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  filter: grayscale(20%);
+}
+
+.cta-section__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.5); /* semi-transparent overlay */
+}
+
+.cta-section__inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-section__heading {
+  font-size: clamp(4rem, 10vw, 9rem);
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  font-family: var(--font-display);
+  margin-bottom: 60px;
+  color: var(--off-white);
+}
+
+.cta-section__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: var(--rust);
+  color: var(--off-white);
+  text-decoration: none;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.4s ease;
+}
+
+.cta-section__btn:hover {
+  transform: scale(1.1);
+  background: #a94a28; /* Slightly darker rust */
+}
+
+.cta-section__btn-text {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: var(--font-display);
+}
+
+@media (max-width: 768px) {
+  .cta-section {
+    height: 80vh;
+    min-height: 500px;
+  }
+  .cta-section__btn {
+    width: 140px;
+    height: 140px;
+  }
+}

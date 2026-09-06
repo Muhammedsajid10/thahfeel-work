@@ -1,0 +1,118 @@
+.footer {
+  background: var(--charcoal);
+  color: var(--off-white);
+  padding-top: 120px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.footer__logo-huge {
+  font-size: clamp(4rem, 15vw, 12rem);
+  font-weight: 700;
+  line-height: 0.8;
+  color: var(--off-white);
+  text-decoration: none;
+  font-family: var(--font-display);
+  letter-spacing: -0.04em;
+  transition: color 0.4s ease;
+}
+
+.footer__logo-huge:hover {
+  color: var(--rust);
+}
+
+.footer__info {
+  max-width: 400px;
+}
+
+.footer__desc {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: var(--steel-light);
+  font-weight: 400;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.footer__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--steel);
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.footer__nav,
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__nav a,
+.footer__contact a,
+.footer__contact p {
+  font-size: 1.15rem;
+  color: var(--off-white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: var(--font-display);
+}
+
+.footer__nav a:hover,
+.footer__contact a:hover {
+  color: var(--rust);
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  font-size: 0.8rem;
+  color: var(--steel);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+@media (max-width: 960px) {
+  .footer__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__links {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
