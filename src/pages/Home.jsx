@@ -4,14 +4,16 @@ import Hero from "../components/Hero";
 import IntroStatement from "../components/IntroStatement";
 import AboutPreview from "../components/AboutPreview";
 import ServiceSection from "../components/ServiceSection";
+import GalleryPreview from "../components/GalleryPreview";
 import FeatureSections from "../components/FeatureSections";
 import WhyChooseUs from "../components/WhyChooseUs";
 import ProcessSection from "../components/ProcessSection";
 import CTASection from "../components/CTASection";
+import company from "../data/company";
 
 export default function Home() {
   useEffect(() => {
-    document.title = "TAHFEEL TECHNICAL SERVICE | Integrated Solutions";
+    document.title = `${company.name} | Integrated Solutions`;
   }, []);
 
   return (
@@ -25,6 +27,7 @@ export default function Home() {
       <IntroStatement />
       <AboutPreview />
       <ServiceSection />
+      <GalleryPreview />
       <FeatureSections />
       <WhyChooseUs />
       <ProcessSection />
@@ -32,3 +35,4 @@ export default function Home() {
     </PageTransition>
   );
 }
+

@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container footer__inner">
         <div className="footer__top">
           <Link to="/" className="footer__logo-huge">
-            TAHFEEL
+            {company.name}
           </Link>
           <div className="footer__info">
             <p className="footer__desc">
@@ -26,6 +26,7 @@ export default function Footer() {
               <Link to="/">HOME</Link>
               <Link to="/about">ABOUT</Link>
               <Link to="/services">SERVICES</Link>
+              <Link to="/gallery">OUR WORK</Link>
               <Link to="/contact">CONTACT</Link>
             </nav>
           </div>

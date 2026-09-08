@@ -3,7 +3,8 @@
 // ============================================================
 
 export const company = {
-  name: "TAHFEEL TECHNICAL SERVICE",
+  name: "Tahfeel Technical Services Co LLC",
+  brandName: "TAHFEEL TECHNICAL SERVICES",
   tagline: "Integrated Technical & Contracting Solutions",
   phone: "+971 50 964 1429",
   phoneHref: "tel:+971509641429",

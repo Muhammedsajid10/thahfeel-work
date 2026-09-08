@@ -8,6 +8,7 @@ const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
+  { to: "/gallery", label: "Our Work" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -45,7 +46,7 @@ export default function Navbar() {
       <div className="container navbar__inner">
         <Link to="/" className="navbar__brand" onClick={() => setOpen(false)}>
           <span className="navbar__mark" aria-hidden="true" />
-          {company.name}
+          {company.brandName}
         </Link>
 
         {/* Desktop Links */}
